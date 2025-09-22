@@ -1,0 +1,19 @@
+public class MinutesToTime {
+    public static void main(String[] args) {
+        // I have some minutes number
+        long myMinutes = 3456789;
+
+        // how many minutes in one day and year
+        long minutesOneDay = 60 * 24;
+        long minutesOneYear = minutesOneDay * 365;
+
+        // change minutes to years and days
+        long howManyYears = myMinutes / minutesOneYear;
+        long leftMinutes = myMinutes % minutesOneYear;
+        long howManyDays = leftMinutes / minutesOneDay;
+
+        // print it out
+        System.out.println(myMinutes + " minutes is like:");
+        System.out.println(howManyYears + " years and " + howManyDays + " days");
+    }
+}
