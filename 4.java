@@ -1,36 +1,69 @@
-// Student's name: SAMUEL BERNAL
-// Group: 10B
+// Student: Samuel Bernal
+// Class: 10B
 // Date: 29/09/25
-// Topic: JAVA SCRIPT BASICS 
+// Exercise 3.1 - Sum of Three Numbers
 
 import java.util.Scanner;
 
-/**
- * This program asks the user to type two numbers
- * and then shows the result of adding them.
- */
-public class SumOfTwoNumbers {
-
+public class SumOfThreeNumbers {
     public static void main(String[] args) {
 
-        // 1. Scanner helps us read what the user types.
+        // Create a scanner to read what the user types
         Scanner scanner = new Scanner(System.in);
 
-        // 2. Ask for the first number.
-        System.out.println("Please enter the first number:");
-        double number1 = scanner.nextDouble();
+        // Ask for the first number
+        System.out.println("Enter the first number:");
+        double num1 = scanner.nextDouble();
 
-        // 3. Ask for the second number.
-        System.out.println("Please enter the second number:");
-        double number2 = scanner.nextDouble();
+        // Ask for the second number
+        System.out.println("Enter the second number:");
+        double num2 = scanner.nextDouble();
 
-        // 4. Add the two numbers.
-        double sum = number1 + number2;
+        // Ask for the third number
+        System.out.println("Enter the third number:");
+        double num3 = scanner.nextDouble();
 
-        // 5. Show the result.
-        System.out.println("The sum of " + number1 + " and " + number2 + " is: " + sum);
+        // Add all three numbers
+        double sum = num1 + num2 + num3;
 
-        // 6. Close the scanner (bye bye).
+        // Show the result
+        System.out.println("The sum of " + num1 + " + " + num2 + " + " + num3 + " is: " + sum);
+
+        // Close the scanner
         scanner.close();
     }
 }
+
+
+// Student: Samuel Bernal
+// Class: 10B
+// Date: 29/09/25
+// Exercise 3.2 - Product of Two Numbers
+
+import java.util.Scanner;
+
+public class ProductOfTwoNumbers {
+    public static void main(String[] args) {
+
+        // Create a scanner to read what the user types
+        Scanner scanner = new Scanner(System.in);
+
+        // Ask for the first number
+        System.out.println("Enter the first number:");
+        double num1 = scanner.nextDouble();
+
+        // Ask for the second number
+        System.out.println("Enter the second number:");
+        double num2 = scanner.nextDouble();
+
+        // Multiply the two numbers
+        double product = num1 * num2;
+
+        // Show the result
+        System.out.println("The product of " + num1 + " x " + num2 + " is: " + product);
+
+        // Close the scanner
+        scanner.close();
+    }
+}
+
